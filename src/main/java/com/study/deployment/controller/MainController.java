@@ -7,11 +7,12 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/main")
 public class MainController {
 
-    Integer version = 1;
+    Integer version = 2;
 
     @GetMapping
     public String checkVersion(){
-        String msg = "현재 애플리케이션의 버전은 "+version+" 입니다";
+        String msg = "현재 애플리케이션의 버전은 "+version+" 입니다\n" +
+                "지금은 jenkins 파이프라인 구축 테스트 중입니다.";
 
         return msg;
     }
