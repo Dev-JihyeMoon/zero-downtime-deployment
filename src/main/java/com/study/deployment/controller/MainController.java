@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/main")
 public class MainController {
 
-    Integer version = 2;
+    String version = "2.0.1";
 
     @GetMapping
     public String checkVersion(){
